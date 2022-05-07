@@ -1,6 +1,6 @@
 package variables;
 
-public class PostPreIncDec {
+public class PostPreIncDecExample {
 
     public static void main(String[] args) {
 

@@ -1,6 +1,6 @@
 package variables;
 
-public class RelationalOperators {
+public class RelationalOperatorsExample {
 
     public static void main(String[] args) {
 

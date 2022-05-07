@@ -1,6 +1,6 @@
 package variables;
 
-public class ArithmeticOperations {
+public class ArithmeticOperationsExample {
 
     public static void main(String[] args) {
 

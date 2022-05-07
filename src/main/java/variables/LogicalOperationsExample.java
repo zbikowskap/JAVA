@@ -1,6 +1,6 @@
 package variables;
 
-public class LogicalOperations {
+public class LogicalOperationsExample {
 
     public static void main(String[] args) {
         boolean a = true;
