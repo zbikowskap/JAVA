@@ -8,9 +8,22 @@ public class Exercise3 {
         Scanner scanner = new Scanner(System.in);
         int side = scanner.nextInt();
 
+        //Kwadrat
         for (int i = 0; i < side; i++) {
             //Drukowanie w prawo
             for (int j = 0; j < side; j++) {
+                System.out.print("* ");
+            }
+            //Nowa linia
+            System.out.println();
+        }
+
+        System.out.println();
+
+        //Trojkat
+        for (int i = 0; i < side; i++) {
+            //Drukowanie w prawo
+            for (int j = 0; j <= i; j++) {
                 System.out.print("* ");
             }
             //Nowa linia
