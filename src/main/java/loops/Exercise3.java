@@ -29,6 +29,22 @@ public class Exercise3 {
             //Nowa linia
             System.out.println();
         }
+
+        System.out.println();
+
+        //Przekatna
+        for (int i = 0; i < side; i++) {
+            //Drukowanie w prawo
+            for (int j = 0; j < side; j++) {
+                if (i == j) {
+                    System.out.print("* ");
+                } else {
+                    System.out.print("  ");
+                }
+            }
+            //Nowa linia
+            System.out.println();
+        }
     }
 
 }
