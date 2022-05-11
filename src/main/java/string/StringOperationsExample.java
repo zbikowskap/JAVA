@@ -3,10 +3,9 @@ package string;
 /**
  * WSZYSTKIE TE OPERACJE ZWRACAJA NOWE OBIEKTY KLASY STRING PONIEWAZ STRING JEST NIEMUTOWALNY.
  */
-public class StringOperations {
+public class StringOperationsExample {
 
     public static void main(String[] args) {
-
         String text = "Kolorowy świat kiedy ja";
         //Metoda tworzy nowego Stringa z duzych liter
         String upperCaseString = text.toUpperCase();
@@ -37,6 +36,8 @@ public class StringOperations {
         for (int i = 0; i < words.length; i++) {
             System.out.print(words[i] + "-");
         }
+
+        System.out.println();
 
     }
 
