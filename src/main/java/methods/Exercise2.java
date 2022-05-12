@@ -13,7 +13,19 @@ public class Exercise2 {
      */
 
     public static void main(String[] args) {
+        double multiplyResult = multiply(15, 0.5);
+        System.out.println(multiplyResult);
 
+        String decorateResult = decorate("Kolano");
+        System.out.println(decorateResult);
+    }
+
+    public static double multiply(double a, double b) {
+        return a * b;
+    }
+
+    public static String decorate(String word) {
+        return word.toUpperCase() + ".";
     }
 
 }
