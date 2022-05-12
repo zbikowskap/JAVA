@@ -3,7 +3,6 @@ package arrays;
 public class Exercise10 {
 
     public static void main(String[] args) {
-
         double[][] array = new double[4][5];
 
         for (int i = 0; i < array.length; i++) {
