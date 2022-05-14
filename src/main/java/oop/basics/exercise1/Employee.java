@@ -4,6 +4,8 @@ import java.time.LocalDate;
 
 public class Employee {
 
+    public static int numberOfEmployees = 0;
+
     private String firstname;
     private String lastname;
     private int age;
@@ -12,11 +14,13 @@ public class Employee {
 
     public Employee(String firstname) {
         this.firstname = firstname;
+        numberOfEmployees++;
     }
 
     public Employee(String firstname, String lastname) {
         this.firstname = firstname;
         this.lastname = lastname;
+        numberOfEmployees++;
     }
 
     public Employee(String firstname, String lastname, int age, LocalDate employmentDate, double salary) {
@@ -25,6 +29,7 @@ public class Employee {
         this.age = age;
         this.employmentDate = employmentDate;
         this.salary = salary;
+        numberOfEmployees++;
     }
 
     public String getFirstname() {

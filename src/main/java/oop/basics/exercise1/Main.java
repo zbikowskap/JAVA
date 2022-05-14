@@ -16,6 +16,8 @@ public class Main {
 
         employee1.working();
         employee1.chill();
+
+        System.out.println(Employee.numberOfEmployees);
     }
 
 }
