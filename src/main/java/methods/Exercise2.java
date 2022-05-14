@@ -26,6 +26,11 @@ public class Exercise2 {
         int[] tab = {5, 2, 2, 1};
         int result = sum(tab);
         System.out.println(result);
+
+        System.out.println(factorial(0));
+        System.out.println(factorial(1));
+        System.out.println(factorial(2));
+        System.out.println(factorial(3));
     }
 
     public static double multiply(double a, double b) {
@@ -51,6 +56,23 @@ public class Exercise2 {
         }
 
         return sum;
+    }
+
+    /**
+     * Silnia iteracyjnie.
+     */
+    public static int factorial(int n) {
+        if (n < 0) {
+            return 0;
+        }
+
+        int factorial = 1;
+
+        for (int i = 2; i <= n; i++) {
+            factorial = factorial * i;
+        }
+
+        return factorial;
     }
 
 }
