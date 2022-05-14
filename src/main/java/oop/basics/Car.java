@@ -1,4 +1,4 @@
-package oop.podstawy;
+package oop.basics;
 
 public class Car {
 
