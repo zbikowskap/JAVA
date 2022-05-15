@@ -1,6 +1,7 @@
 package oop.repeat;
 
 import java.time.LocalDate;
+import java.util.Random;
 
 public class Main {
 
@@ -21,8 +22,11 @@ public class Main {
         Meeting meeting3 = new Meeting("Zebranie zarządu", LocalDate.of(2022, 05, 16), "Sala 3", 8);
 
         Meeting[] meetings = {meeting1, meeting2, meeting3};
+        Random random = new Random();
 
         for (int i = 0; i < meetings.length; i++) {
+            int size = random.nextInt(31) + 50;
+            meetings[i].setSize(size);
             System.out.println(meetings[i].description());
         }
 
