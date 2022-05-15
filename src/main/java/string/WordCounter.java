@@ -5,9 +5,11 @@ public class WordCounter {
     public static void main(String[] args) {
         String text = "        test        dwa       ";
 
-        int words = countWords2(text);
+        int wordsQuantity = countWords2(text);
+        System.out.println(wordsQuantity);
 
-        System.out.println(words);
+        double averageWordLength = averageWordLength(text);
+        System.out.println(averageWordLength);
     }
 
     /**
@@ -26,9 +28,7 @@ public class WordCounter {
         if (text.isEmpty()) {
             return 0;
         }
-        String textWithoutMultiplySpaces = text.replaceAll("\\s+", " ");
-        String trimmedWord = textWithoutMultiplySpaces.trim();
-        String[] words = trimmedWord.split(" ");
+        String[] words = retrieveWords(text);
         return words.length;
     }
 
@@ -53,6 +53,33 @@ public class WordCounter {
         }
 
         return words + 1;
+    }
+
+    /**
+     * Metoda zwraca tablice wyrazow z tekstu. Ignoruje wielokrotne spacje.
+     */
+    public static String[] retrieveWords(String text) {
+        String textWithoutMultiplySpaces = text.replaceAll("\\s+", " ");
+        String trimmedWord = textWithoutMultiplySpaces.trim();
+        return trimmedWord.split(" ");
+    }
+
+    /**
+     * Metoda oblicza srednia dlugosc wyrazow w tekscie.
+     */
+    public static double averageWordLength(String text) {
+        //Pozyskanie tablicy wyrazow
+        String[] words = retrieveWords(text);
+
+        int sum = 0;
+
+        //Obliczenie sumy
+        for (int i = 0; i < words.length; i++) {
+            sum += words[i].length();
+        }
+
+        //Obliczenie sredniej
+        return (double) sum / words.length;
     }
 
 }
