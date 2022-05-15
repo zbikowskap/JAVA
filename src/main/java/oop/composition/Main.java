@@ -9,6 +9,9 @@ public class Main {
 
         Computer computer = new Computer(processor, graphicCard, powerSupply);
         System.out.println(computer.description());
+
+        Computer computer1 = ComputerFactory.create("i7", "RTX 2070", "Corsair 650W");
+        System.out.println(computer1.description());
     }
 
 }
