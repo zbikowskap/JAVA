@@ -9,4 +9,10 @@ public class Dog extends Animal {
         this.color = color;
     }
 
+    @Override
+    public void voice() {
+        super.voice();
+        System.out.println("Hau Hau");
+    }
+
 }

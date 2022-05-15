@@ -6,4 +6,8 @@ public class Cat extends Animal {
         super(name, age, race);
     }
 
+    @Override
+    public void voice() {
+        System.out.println("Miau miau");
+    }
 }
