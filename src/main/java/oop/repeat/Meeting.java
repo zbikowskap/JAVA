@@ -63,4 +63,9 @@ public class Meeting {
                 ", size=" + size +
                 '}';
     }
+
+    public void delay(int days) {
+        date = date.plusDays(days);
+    }
+
 }

@@ -6,7 +6,6 @@ import java.util.Random;
 public class Main {
 
     public static void main(String[] args) {
-
         Game terra = new Game("Terraformacja marsa", 10);
         Game catan = new Game("Catan", 7);
         Game splendor = new Game("Splendor", 5);
@@ -27,6 +26,7 @@ public class Main {
         for (int i = 0; i < meetings.length; i++) {
             int size = random.nextInt(31) + 50;
             meetings[i].setSize(size);
+            meetings[i].delay(5);
             System.out.println(meetings[i].description());
         }
 
