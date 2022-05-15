@@ -54,4 +54,13 @@ public class Meeting {
     public void setSize(int size) {
         this.size = size;
     }
+
+    public String description() {
+        return "Meeting{" +
+                "description='" + description + '\'' +
+                ", date=" + date +
+                ", address='" + address + '\'' +
+                ", size=" + size +
+                '}';
+    }
 }

@@ -20,6 +20,13 @@ public class Main {
         Meeting meeting2 = new Meeting("Planowanie sprintu", "Sala 13");
         Meeting meeting3 = new Meeting("Zebranie zarządu", LocalDate.of(2022, 05, 16), "Sala 3", 8);
 
+        Meeting[] meetings = {meeting1, meeting2, meeting3};
+
+        for (int i = 0; i < meetings.length; i++) {
+            System.out.println(meetings[i].description());
+        }
+
+
     }
 
 }
