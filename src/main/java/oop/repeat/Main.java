@@ -1,5 +1,7 @@
 package oop.repeat;
 
+import java.time.LocalDate;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -13,6 +15,10 @@ public class Main {
         for (int i = 0; i < games.length; i++) {
             System.out.println(games[i].description());
         }
+
+        Meeting meeting1 = new Meeting("Retrospekcja sprintu", "Sala 11");
+        Meeting meeting2 = new Meeting("Planowanie sprintu", "Sala 13");
+        Meeting meeting3 = new Meeting("Zebranie zarządu", LocalDate.of(2022, 05, 16), "Sala 3", 8);
 
     }
 
