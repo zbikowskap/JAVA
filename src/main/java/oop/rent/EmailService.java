@@ -7,7 +7,7 @@ public class EmailService {
     }
 
     public void sentRentConfirmation(Scooter scooter) {
-        System.out.println("[EMAIL] Potwierdzenie wypozyczenia. " + scooter.desc());
+        System.out.println("[EMAIL] Potwierdzenie wypozyczenia. " + scooter.description());
     }
 
 }

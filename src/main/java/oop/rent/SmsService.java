@@ -7,7 +7,7 @@ public class SmsService {
     }
 
     public void sentRentConfirmation(Scooter scooter) {
-        System.out.println("[SMS] Potwierdzenie wypozyczenia. " + scooter.desc());
+        System.out.println("[SMS] Potwierdzenie wypozyczenia. " + scooter.description());
     }
 
 }

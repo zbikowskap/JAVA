@@ -2,7 +2,7 @@ package oop.rent;
 
 import java.math.BigDecimal;
 
-public class Scooter {
+public class Scooter implements Rentable {
 
     private static final BigDecimal PRICE_PER_HOUR = new BigDecimal("5.50");
 
@@ -12,10 +12,12 @@ public class Scooter {
         this.brand = brand;
     }
 
-    public String desc() {
+    @Override
+    public String description() {
         return "Hulajnoga " + this.brand + ".";
     }
 
+    @Override
     public BigDecimal calculatePrice(int hours) {
         final BigDecimal bigDecimalHours = BigDecimal.valueOf(hours);
         return PRICE_PER_HOUR.multiply(bigDecimalHours);
