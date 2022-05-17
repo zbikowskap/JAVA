@@ -12,6 +12,10 @@ public class Main {
         smsService.sentRentConfirmation(car);
         invoiceService.generateInvoice(car, 4);
 
+        Scooter scooter = new Scooter("Fast and Furious");
+        emailService.sentRentConfirmation(scooter);
+        smsService.sentRentConfirmation(scooter);
+        invoiceService.generateInvoice(scooter, 5);
     }
 
 }

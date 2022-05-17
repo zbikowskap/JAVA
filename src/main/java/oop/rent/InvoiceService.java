@@ -6,4 +6,8 @@ public class InvoiceService {
         System.out.println("Generating invoice... price: " + car.calculatePrice(hours));
     }
 
+    public void generateInvoice(Scooter scooter, int hours) {
+        System.out.println("Generating invoice... price: " + scooter.calculatePrice(hours));
+    }
+
 }

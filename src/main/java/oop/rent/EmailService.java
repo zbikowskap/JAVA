@@ -6,4 +6,8 @@ public class EmailService {
         System.out.println("[EMAIL] Potwierdzenie wypozyczenia. " + car.description());
     }
 
+    public void sentRentConfirmation(Scooter scooter) {
+        System.out.println("[EMAIL] Potwierdzenie wypozyczenia. " + scooter.desc());
+    }
+
 }
