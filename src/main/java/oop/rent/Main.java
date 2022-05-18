@@ -10,6 +10,9 @@ public class Main {
 
         Scooter scooter = new Scooter("Fast and Furious");
         rentService.rent(scooter, 5);
+
+        Trailer trailer = new Trailer(10.5);
+        rentService.rent(trailer, 15);
     }
 
 }

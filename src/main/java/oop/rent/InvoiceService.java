@@ -2,12 +2,8 @@ package oop.rent;
 
 public class InvoiceService {
 
-    public void generateInvoice(Car car, int hours) {
-        System.out.println("Generating invoice... price: " + car.calculatePrice(hours));
-    }
-
-    public void generateInvoice(Scooter scooter, int hours) {
-        System.out.println("Generating invoice... price: " + scooter.calculatePrice(hours));
+    public void generateInvoice(Rentable rentable, int hours) {
+        System.out.println("Generating invoice... price: " + rentable.calculatePrice(hours));
     }
 
 }

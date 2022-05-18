@@ -6,16 +6,10 @@ public class RentService {
     private SmsService smsService = new SmsService();
     private InvoiceService invoiceService = new InvoiceService();
 
-    public void rent(Car car, int hours) {
-        emailService.sentRentConfirmation(car);
-        smsService.sentRentConfirmation(car);
-        invoiceService.generateInvoice(car, hours);
-    }
-
-    public void rent(Scooter scooter, int hours) {
-        emailService.sentRentConfirmation(scooter);
-        smsService.sentRentConfirmation(scooter);
-        invoiceService.generateInvoice(scooter, hours);
+    public void rent(Rentable rentable, int hours) {
+        emailService.sentRentConfirmation(rentable);
+        smsService.sentRentConfirmation(rentable);
+        invoiceService.generateInvoice(rentable, hours);
     }
 
 }
