@@ -1,0 +1,4 @@
+1. Czym jest String pool?
+2. Klasa i obiekt, opowiedzieć
+3. Czym się różni klasa abstrakcyjna od interfejsu?
+4. Jak działa słówko final i gdzie go można użyć?
