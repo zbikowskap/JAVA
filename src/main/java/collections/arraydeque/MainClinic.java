@@ -3,7 +3,6 @@ package collections.arraydeque;
 public class MainClinic {
 
     public static void main(String[] args) {
-
         Clinic clinic = new Clinic();
 
         clinic.registerPatient("Michal");
@@ -12,7 +11,6 @@ public class MainClinic {
 
         String handledPatient = clinic.handlePatient();
         System.out.println(handledPatient); //Michal, bo najdluzej stal w kolejce
-
     }
 
 }
