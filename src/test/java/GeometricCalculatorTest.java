@@ -1,5 +1,7 @@
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
+import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 
@@ -17,7 +19,9 @@ public class GeometricCalculatorTest {
         assertEquals(12, result);
     }
 
+    //@Disabled - wylacza testy
     @Test
+    @DisplayName("SHOULD_CALCULATE_RECTANGLE_CIRCUIT") //zmienia nazwe testu
     void shouldCalculateRectangleCircuit() {
         //given
         GeometricCalculator geometricCalculator = new GeometricCalculator();
@@ -26,7 +30,7 @@ public class GeometricCalculatorTest {
         double result = geometricCalculator.calculateRectangleCircuit(5, 2);
 
         //then
-        assertEquals(14, result);
+        assertThat(result).isEqualTo(14);
     }
 
 }
