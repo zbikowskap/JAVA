@@ -11,4 +11,5 @@ Pytania:
 Zadania:
 
 1. Wyszukać min i max w tablicy.
-2. fb
+2. Zadanie fizz buzz.
+3. Napisać metodę, która dla przekazanej listy zwróci listę bez duplikatów.
