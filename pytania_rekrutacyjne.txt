@@ -8,7 +8,10 @@ Pytania:
 6. Metody equals i hashCode, czym sa i jaki jest ich kontrakt.
 7. Jakiego typu użyjesz do przechowywania np. kwoty lub istotnych danych liczbowych. (double fujka, BigDecimal mniam)
 8. Czym charakteryzuja sie zbiory w Javie i jakie sa ich rodzaje?
-9. Co to jest TDD?
+9. Co to jest TDD? Warto pamietac o red -> green -> refactor i given/when/then.
+10. Co to jest assertJ? biblioteka do asercji
+11. Mockito, jaka jest roznica miedzy MOCK a SPY?
+
 Zadania:
 
 1. Wyszukać min i max w tablicy.
