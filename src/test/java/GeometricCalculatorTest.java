@@ -17,4 +17,16 @@ public class GeometricCalculatorTest {
         assertEquals(12, result);
     }
 
+    @Test
+    void shouldCalculateRectangleCircuit() {
+        //given
+        GeometricCalculator geometricCalculator = new GeometricCalculator();
+
+        //when
+        double result = geometricCalculator.calculateRectangleCircuit(5, 2);
+
+        //then
+        assertEquals(14, result);
+    }
+
 }

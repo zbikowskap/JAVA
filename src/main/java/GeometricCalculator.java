@@ -5,7 +5,7 @@ public class GeometricCalculator {
     }
 
     public double calculateRectangleCircuit(double a, double b) {
-        return 0;
+        return 2 * a + 2 * b;
     }
 
 }
