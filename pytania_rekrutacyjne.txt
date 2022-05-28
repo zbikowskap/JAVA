@@ -8,6 +8,7 @@ Pytania:
 6. Metody equals i hashCode, czym sa i jaki jest ich kontrakt.
 7. Jakiego typu użyjesz do przechowywania np. kwoty lub istotnych danych liczbowych. (double fujka, BigDecimal mniam)
 8. Czym charakteryzuja sie zbiory w Javie i jakie sa ich rodzaje?
+9. Co to jest TDD?
 Zadania:
 
 1. Wyszukać min i max w tablicy.
