@@ -22,4 +22,23 @@ public class User {
         return null;
     }
 
+    public String getLogin() {
+        return login;
+    }
+
+    public String getPassword() {
+        return password;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public LocalDateTime getCreationDate() {
+        return creationDate;
+    }
 }
