@@ -6,12 +6,13 @@ import java.util.Set;
 public class SetObjectExample {
 
     public static void main(String[] args) {
-
         Set<Pokemon> pokedex = new LinkedHashSet<>();
 
         pokedex.add(new Pokemon("Bulbazaur", "Grass"));
         pokedex.add(new Pokemon("Pikatchu", "Electric"));
+        pokedex.add(new Pokemon("Pikatchu", "Electric"));
         pokedex.add(new Pokemon("Charmander", "Fire"));
+        pokedex.add(new Pokemon("Nidoking", "Posion/Ground"));
         pokedex.add(new Pokemon("Nidoking", "Posion/Ground"));
         pokedex.add(new Pokemon("Psyduck", "Water/Psychic"));
         pokedex.add(new Pokemon("Ponyta", "Fire"));
