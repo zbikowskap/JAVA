@@ -3,7 +3,7 @@ package exceptions.exercise;
 import org.junit.jupiter.api.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
+import static org.junit.jupiter.api.Assertions.assertThrows;
 
 class UserTest {
 
@@ -19,6 +19,28 @@ class UserTest {
         assertThat(result.getFirstName()).isEqualTo("testFirstName");
         assertThat(result.getEmail()).isEqualTo("test@mail.com");
         assertThat(result.getCreationDate()).isNotNull();
+    }
+
+    @Test
+    void shouldThrowIllegalArgumentException() {
+        //given
+        String testLogin = "short";
+
+        //when & then
+        assertThrows(IllegalArgumentException.class, () -> {
+            User.create(testLogin, "testPass", "testFirstName", "test@mail.com");
+        });
+    }
+
+    @Test
+    void shouldThrowExceptionWhenArgumentIsNull() {
+        //given
+        String testLogin = null;
+
+        //when & then
+        assertThrows(NullPointerException.class, () -> {
+            User.create(testLogin, "testPass", "testFirstName", "test@mail.com");
+        });
     }
 
 }
