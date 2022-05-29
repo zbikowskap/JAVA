@@ -3,6 +3,10 @@ package exceptions;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Wyjątki dziedziczące po RuntimeException są tak zwanymi UNCHECKED EXCEPTIONS, czyli nie trzeba ich obsługiwać.
+ * Ale można.
+ */
 public class RuntimeExceptionExample {
 
     public static void main(String[] args) {

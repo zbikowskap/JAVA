@@ -11,6 +11,12 @@ Pytania:
 9. Co to jest TDD? Warto pamietac o red -> green -> refactor i given/when/then.
 10. Co to jest assertJ? biblioteka do asercji
 11. Mockito, jaka jest roznica miedzy MOCK a SPY?
+12. Jakie są rodzaję wyjątków w Javie?
+13. Czym się różnią wyjątki checked od unchecked?
+14. Czy powinniśmy łapać errory?
+15. Czy try potrzebuje catch?
+16. Jak działa finally?
+17. W jaki sposób można zrobić swój własny wyjątek?
 
 Zadania:
 
