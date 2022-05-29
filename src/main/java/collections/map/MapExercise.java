@@ -6,7 +6,6 @@ import java.util.Map;
 public class MapExercise {
 
     public static void main(String[] args) {
-
         Map<Long, String> map = new HashMap<>();
 
         map.put(1L, "Agata");
