@@ -38,4 +38,9 @@ public class Student {
     public int hashCode() {
         return Objects.hash(firstName, lastName, mainLanguage);
     }
+
+    @Override
+    public String toString() {
+        return firstName + " " + lastName + " " + mainLanguage;
+    }
 }

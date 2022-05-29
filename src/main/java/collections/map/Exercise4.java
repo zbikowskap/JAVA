@@ -15,6 +15,7 @@ public class Exercise4 {
 
         studentsWithGrades.put(student1, student1Grades);
 
+        System.out.println(student1);
     }
 
 }
