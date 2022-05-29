@@ -8,6 +8,9 @@ public class Clinic {
     private Queue<String> queue = new ArrayDeque<>();
 
     public void registerPatient(String name) {
+        if (name.isEmpty()) {
+            throw new IllegalArgumentException("Name can not be empty");
+        }
         queue.offer(name);
     }
 
