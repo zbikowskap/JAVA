@@ -19,7 +19,22 @@ public class User {
     }
 
     public static User create(String login, String password, String firstName, String email) {
-        return null;
+        validateNull(login, "Login");
+        validateNull(password, "Password");
+        validateNull(firstName, "FirstName");
+        validateNull(email, "Email");
+
+        if (login.length() < 6) {
+            throw new IllegalArgumentException("Login is too short.");
+        }
+
+        return new User(login, password, firstName, email, LocalDateTime.now());
+    }
+
+    private static void validateNull(String value, String field) {
+        if (value == null) {
+            throw new NullPointerException(field + " can not be null");
+        }
     }
 
     public String getLogin() {

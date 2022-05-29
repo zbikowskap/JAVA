@@ -2,6 +2,10 @@ package exceptions.exercise;
 
 import org.junit.jupiter.api.Test;
 
+import java.math.BigDecimal;
+import java.time.LocalDateTime;
+import java.util.Date;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.junit.jupiter.api.Assertions.assertThrows;
 
@@ -35,11 +39,11 @@ class UserTest {
     @Test
     void shouldThrowExceptionWhenArgumentIsNull() {
         //given
-        String testLogin = null;
+        String testFirstName = null;
 
         //when & then
         assertThrows(NullPointerException.class, () -> {
-            User.create(testLogin, "testPass", "testFirstName", "test@mail.com");
+            User.create("testLogin", "testPass", testFirstName, "test@mail.com");
         });
     }
 
