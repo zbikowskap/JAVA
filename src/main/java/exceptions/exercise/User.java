@@ -31,7 +31,10 @@ public class User {
         return new User(login, password, firstName, email, LocalDateTime.now());
     }
 
-    private static void validateNull(String value, String field) {
+    /**
+     * Klasa Object jest rodzicem wszystkim klas w Javie. Co sprawia, że możemy tam przekazać String, Integer lub np. Car.
+     */
+    private static void validateNull(Object value, String field) {
         if (value == null) {
             throw new NullPointerException(field + " can not be null");
         }
