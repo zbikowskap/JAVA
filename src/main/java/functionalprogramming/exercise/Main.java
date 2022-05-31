@@ -6,9 +6,10 @@ public class Main {
 
         StringProcessor processor = new StringProcessor(word -> word.toUpperCase());
 
-        String result = processor.process("ala");
-
-        System.out.println(result);
+        System.out.println(processor.process("ala"));
+        System.out.println(processor.process("aaaa"));
+        System.out.println(processor.process("bbbb"));
+        System.out.println(processor.process("accccla"));
 
     }
 
