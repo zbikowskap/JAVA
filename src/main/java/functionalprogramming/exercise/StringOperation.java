@@ -1,7 +1,7 @@
 package functionalprogramming.exercise;
 
 @FunctionalInterface
-public interface SpringOperation {
+public interface StringOperation {
 
     String operation(String input);
 
