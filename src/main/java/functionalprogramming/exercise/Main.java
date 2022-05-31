@@ -19,8 +19,6 @@ public class Main {
         System.out.println(processor.process("pigwa"));
         System.out.println(processor.process("motocykl"));
 
-
-
     }
 
 }
