@@ -17,6 +17,7 @@ Pytania:
 15. Czy try potrzebuje catch?
 16. Jak działa finally?
 17. W jaki sposób można zrobić swój własny wyjątek?
+18. Czym jest interfejs funkcyjny?
 
 Zadania:
 
