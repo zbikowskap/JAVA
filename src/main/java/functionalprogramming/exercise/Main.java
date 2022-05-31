@@ -11,6 +11,10 @@ public class Main {
         System.out.println(processor.process("bbbb"));
         System.out.println(processor.process("accccla"));
 
+        //setterem zmienic zachowanie processora
+
+        //zaprezentowac wynik metody process
+
     }
 
 }
