@@ -4,16 +4,22 @@ public class Main {
 
     public static void main(String[] args) {
 
-        StringProcessor processor = new StringProcessor(word -> word.toUpperCase());
+        Processor processor = new Processor(word -> word.toUpperCase());
 
         System.out.println(processor.process("ala"));
         System.out.println(processor.process("aaaa"));
-        System.out.println(processor.process("bbbb"));
-        System.out.println(processor.process("accccla"));
 
-        //setterem zmienic zachowanie processora
+        processor.setOperation(word -> word.toLowerCase());
 
-        //zaprezentowac wynik metody process
+        System.out.println(processor.process("ALA"));
+        System.out.println(processor.process("AAAA"));
+
+        processor.setOperation(word -> word.substring(0,3));
+
+        System.out.println(processor.process("pigwa"));
+        System.out.println(processor.process("motocykl"));
+
+
 
     }
 
