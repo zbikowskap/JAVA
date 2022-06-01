@@ -1,6 +1,7 @@
 package functionalprogramming.streams.exercise;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 public class AuctionHouse {
 
@@ -11,7 +12,9 @@ public class AuctionHouse {
     }
 
     public List<Room> findByCity(String city) {
-        return null;
+        return this.rooms.stream()
+                .filter(room -> room.getCity().equals(city))
+                .collect(Collectors.toList());
     }
 
 }

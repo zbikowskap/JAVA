@@ -17,7 +17,7 @@ public class Main {
 
         List<Room> roomsByCity = auctionHouse.findByCity("Lublin");
 
-        System.out.println(roomsByCity);
+        roomsByCity.forEach(System.out::println);
     }
 
 }

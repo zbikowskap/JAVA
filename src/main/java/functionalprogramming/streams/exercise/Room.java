@@ -29,4 +29,14 @@ public class Room {
     public double getDistanceFromCenter() {
         return distanceFromCenter;
     }
+
+    @Override
+    public String toString() {
+        return "Room{" +
+                "city='" + city + '\'' +
+                ", m2=" + m2 +
+                ", price=" + price +
+                ", distanceFromCenter=" + distanceFromCenter +
+                '}';
+    }
 }
