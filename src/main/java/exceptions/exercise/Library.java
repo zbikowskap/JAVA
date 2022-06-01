@@ -37,7 +37,15 @@ public class Library {
     }
 
     public List<User> retrieveCreatedUsersBefore(LocalDateTime date) {
-        return null;
+        List<User> resultList = new ArrayList<>();
+
+        for (User user : userList) {
+            if (user.getCreationDate().isBefore(date)) {
+                resultList.add(user);
+            }
+        }
+
+        return resultList;
     }
 
 }

@@ -47,7 +47,7 @@ class LibraryTest {
         library.addUser(user2);
 
         //when
-        List<User> result = library.retrieveCreatedUsersBefore(LocalDateTime.now());
+        List<User> result = library.retrieveCreatedUsersBefore(LocalDateTime.now().plusDays(1));
 
         //then
         assertThat(result).hasSize(2);
