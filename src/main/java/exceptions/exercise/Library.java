@@ -1,6 +1,7 @@
 package exceptions.exercise;
 
 import java.time.LocalDate;
+import java.time.LocalDateTime;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,11 +14,15 @@ public class Library {
         this.address = address;
     }
 
+    public List<User> getUserList() {
+        return userList;
+    }
+
     public void addUser(User user) {
 
     }
 
-    public List<User> retrieveCreatedUsersBefore(LocalDate date) {
+    public List<User> retrieveCreatedUsersBefore(LocalDateTime date) {
         return null;
     }
 
