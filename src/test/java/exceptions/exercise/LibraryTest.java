@@ -11,7 +11,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class LibraryTest {
 
     @Test
-    void addUser() {
+    void addUser() throws UserAlreadyExistException {
         //given
         Library library = new Library("Romantyczna 5");
         User user = User.create("Czytelnik1234", "czytelnik1234", "Krzysztof", "kczytelnik@wp.pl");
@@ -24,7 +24,7 @@ class LibraryTest {
     }
 
     @Test
-    void shouldThrowUserAlreadyExistException() {
+    void shouldThrowUserAlreadyExistException() throws UserAlreadyExistException {
         //given
         Library library = new Library("Romantyczna 5");
         User user = User.create("Czytelnik1234", "czytelnik1234", "Krzysztof", "kczytelnik@wp.pl");
@@ -38,7 +38,7 @@ class LibraryTest {
     }
 
     @Test
-    void retrieveCreatedUsersBefore() {
+    void retrieveCreatedUsersBefore() throws UserAlreadyExistException {
         //given
         Library library = new Library("Romantyczna 5");
         User user = User.create("Czytelnik1234", "czytelnik1234", "Krzysztof", "kczytelnik@wp.pl");
@@ -54,7 +54,7 @@ class LibraryTest {
     }
 
     @Test
-    void retrieveCreatedUsersBeforeEmptyResult() {
+    void retrieveCreatedUsersBeforeEmptyResult() throws UserAlreadyExistException {
         //given
         Library library = new Library("Romantyczna 5");
         User user = User.create("Czytelnik1234", "czytelnik1234", "Krzysztof", "kczytelnik@wp.pl");

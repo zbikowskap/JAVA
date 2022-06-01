@@ -18,8 +18,14 @@ public class Library {
         return userList;
     }
 
-    public void addUser(User user) {
+    public void addUser(User user) throws UserAlreadyExistException {
+        for (User existUser : userList) {
+            if (existUser.getLogin().equals(user.getLogin())) {
+                throw new UserAlreadyExistException("");
+            }
+        }
 
+        this.userList.add(user);
     }
 
     public List<User> retrieveCreatedUsersBefore(LocalDateTime date) {
