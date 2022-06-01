@@ -18,11 +18,19 @@ public class Library {
         return userList;
     }
 
-    public void addUser(User user) throws UserAlreadyExistException {
+    /*public void addUser(User user) throws UserAlreadyExistException {
         for (User existUser : userList) {
             if (existUser.getLogin().equals(user.getLogin())) {
                 throw new UserAlreadyExistException("");
             }
+        }
+
+        this.userList.add(user);
+    }*/
+
+    public void addUser(User user) throws UserAlreadyExistException {
+        if (userList.contains(user)) {
+            throw new UserAlreadyExistException("");
         }
 
         this.userList.add(user);
