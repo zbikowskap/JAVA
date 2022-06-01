@@ -18,6 +18,15 @@ Pytania:
 16. Jak działa finally?
 17. W jaki sposób można zrobić swój własny wyjątek?
 18. Czym jest interfejs funkcyjny?
+18.1. Czym jest lambda?
+18.5. Czym sa streamy wprowadzone w Javie 8?
+19. Jakie wyrozniamy typy operacji na streamach? (posrednie i konczace)
+20. Czym sie rozni map od flatMap?
+21. Gdzie wykorzystywane sa interfejsy Predicate, Function, Consumer?
+
+
+Extra. Poczytajcie o Comparable i Comparator.
+
 
 Zadania:
 
