@@ -17,4 +17,16 @@ public class AuctionHouse {
                 .collect(Collectors.toList());
     }
 
+    public List<Room> findByM2(double from, double to) {
+        return this.rooms.stream()
+                .filter(room -> room.getM2() >= from && room.getM2() <= to)
+                .collect(Collectors.toList());
+    }
+
+    public List<Double> getAllPrices() {
+        return this.rooms.stream()
+                .map(room -> room.getPrice())
+                .collect(Collectors.toList());
+    }
+
 }
