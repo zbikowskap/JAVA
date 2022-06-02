@@ -29,4 +29,14 @@ public class Product {
     public ProductType getProductType() {
         return productType;
     }
+
+    @Override
+    public String toString() {
+        return "Product{" +
+                "name='" + name + '\'' +
+                ", price=" + price +
+                ", weight=" + weight +
+                ", productType=" + productType +
+                '}';
+    }
 }

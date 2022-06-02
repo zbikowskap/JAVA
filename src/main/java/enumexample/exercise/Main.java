@@ -17,6 +17,10 @@ public class Main {
             new Product("Cherries", 1_000_000, 0.1, ProductType.FRUIT)
         );
 
+        ProductService productService = new ProductService();
+
+        List<Product> fruits = productService.retrieveFruits(productList);
+        System.out.println(fruits);
 
 
     }
