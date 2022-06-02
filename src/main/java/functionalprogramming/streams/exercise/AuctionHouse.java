@@ -1,5 +1,6 @@
 package functionalprogramming.streams.exercise;
 
+import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
@@ -26,6 +27,14 @@ public class AuctionHouse {
     public List<Double> getAllPrices() {
         return this.rooms.stream()
                 .map(room -> room.getPrice())
+                .collect(Collectors.toList());
+    }
+
+    public List<Room> getThreeClosestToCenter(String city) {
+        return this.rooms.stream()
+                .filter(room -> room.getCity().equals(city))
+                .sorted(Comparator.comparing(Room::getDistanceFromCenter))
+                .limit(3)
                 .collect(Collectors.toList());
     }
 
